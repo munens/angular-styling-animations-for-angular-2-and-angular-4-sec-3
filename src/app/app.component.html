@@ -1,7 +1,15 @@
 <div
+  class="div1"
   (click)="onDivClicked = true"
   [ngStyle]="{'background-color': onDivClicked ? 'red' : 'yellow'}"
 >
-
+</div>
+<br>
+<div
+  class="div2"
+  [ngClass]="{'expand': onDivClicked, '': !onDivClicked}" 
+  (click)="onDivClicked = true"
+  [ngStyle]="{'background-color': onDivClicked ? 'red' : 'blue'}"
+>
 </div>
 
