@@ -15,3 +15,30 @@
 	width: 200px;
 	transition: width 0.3s ease-in 0.3s, background-color 0.3s ease-in 0.3s;
 }
+
+.div3 {
+	width: 150px;
+	height: 75px;
+	background-color: green;
+}
+
+.animate {
+	animation: moveDiv 1.5s ease-out forwards;
+}
+
+@keyframes moveDiv {
+	0% {
+		transform: translateX(0) scale(1);/* transform: allows us to change the position and the scale.*/
+		opacity: 1
+	}
+	50% {
+		transform: translateX(300px) scale(1.2);
+		opacity: 0.3
+	}
+	75% {
+		transform: translateX(400px) scale(1);
+	}
+	100% {
+		opacity: 0.1;
+	}
+}
